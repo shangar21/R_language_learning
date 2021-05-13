@@ -1,0 +1,12 @@
+x <- c(2,3,3,5,5,6,5,7,9,10)
+hist(x, freq=F)
+x2 <- c(10, 11, 14, 15, 17, 19, 21, 28, 35)
+print(summary(x))
+print(mean(x))
+print(sd(x))
+boxplot(x)
+
+x3 <- c(71, 80, 58, 60, 63, 64, 51, 55, 48, 67, 74, 51)
+Fx  = ecdf(x3)
+plot(Fx)
+axis(1, at=seq(1,100, by=2), las=2)

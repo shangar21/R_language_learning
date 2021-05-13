@@ -1,0 +1,17 @@
+# require(pacman)
+# library(pacman)
+# pacman :: p_load(pacman, dplyr, GGally, ggplot2, ggthemes, ggvis, httr, lubridate, plotly, rio, rmarkdown, shiny, stringr, tidyr)
+# library(datasets)
+# p_unload(dplyr, tidyr, stringr)
+# p_unload(all)
+# detach("package:datasets", unload=TRUE)
+require(pacman)
+library(datasets)
+library(pacman)
+#pacman :: p_load(pacman, txtplot)
+p_unload(txtplot)
+library(txtplot)
+
+head(iris)
+
+txtplot(iris$Petal.Length, iris$Petal.Width)
